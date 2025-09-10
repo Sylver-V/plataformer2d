@@ -717,11 +717,14 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 548743e6f22be1d4089b8e45b5c0bd61, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  playerPrefab: {fileID: 1516932739}
+  playerPrefab: {fileID: 8835229685202505509, guid: 00afc9fb4087652419d090da0b825d97, type: 3}
   enemies:
   - {fileID: 884938000}
   - {fileID: 1120622458}
   startPoint: {fileID: 544955524}
+  duration: 0.2
+  delay: 1
+  ease: 27
 --- !u!4 &529154156
 Transform:
   m_ObjectHideFlags: 0
@@ -2410,11 +2413,6 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
---- !u!1 &1516932739 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 8835229685202505509, guid: 00afc9fb4087652419d090da0b825d97, type: 3}
-  m_PrefabInstance: {fileID: 5790447825513800731}
-  m_PrefabAsset: {fileID: 0}
 --- !u!1 &1529084027
 GameObject:
   m_ObjectHideFlags: 0
