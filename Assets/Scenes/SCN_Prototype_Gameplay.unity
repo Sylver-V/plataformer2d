@@ -337,8 +337,11 @@ MonoBehaviour:
   speedRun: 20
   friction: {x: 0.3, y: 0}
   forceJump: 15
-  jumpScaleY: 1.5
+  jumpScaleY: 1.2
   jumpScaleX: 0.7
+  boolRun: Run
+  animator: {fileID: 2057779360}
+  playerSwipeduration: 0.5
   animationDuration: 0.3
   ease: 27
 --- !u!114 &188897804
@@ -1649,6 +1652,11 @@ Transform:
   m_Father: {fileID: 566301016}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!95 &2057779360 stripped
+Animator:
+  m_CorrespondingSourceObject: {fileID: 6413013834153556191, guid: 00afc9fb4087652419d090da0b825d97, type: 3}
+  m_PrefabInstance: {fileID: 1517402777}
+  m_PrefabAsset: {fileID: 0}
 --- !u!4 &2057779361 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 8007466312498025151, guid: 00afc9fb4087652419d090da0b825d97, type: 3}

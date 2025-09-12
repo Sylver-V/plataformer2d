@@ -20,7 +20,10 @@ public class Player : MonoBehaviour
     public float jumpScaleY = 1.5f;
     public float jumpScaleX = 0.7f;
 
-
+    [Header("Animation player")]
+    public string boolRun = "Run";
+    public Animator animator;
+    public float playerSwipeduration = .1f;
 
     public float animationDuration = 0.3f;
     public Ease ease = Ease.OutBack;
@@ -37,9 +40,17 @@ public class Player : MonoBehaviour
     private void HandleMoviment()
     {
         if (Input.GetKey(KeyCode.LeftShift))
+        {
             _currentSpeed = speedRun;
+            animator.speed = 2;
+        }
+
         else
+        {
             _currentSpeed = speed;
+            animator.speed = 1;
+        }
+
 
 
 
@@ -47,16 +58,31 @@ public class Player : MonoBehaviour
         {
             //myRigibody.MovePosition(myRigibody.position - velocity * Time.deltaTime);
             myRigibody.velocity = new Vector2(-_currentSpeed, myRigibody.velocity.y);
+            if(myRigibody.transform.localScale.x != -1)
+            {
+                myRigibody.transform.DOScaleX(-1, playerSwipeduration);
+            }
+            animator.SetBool(boolRun, true);
         }
 
         else if (Input.GetKey(KeyCode.RightArrow))
         {
             //myRigibody.MovePosition(myRigibody.position + velocity * Time.deltaTime);
             myRigibody.velocity = new Vector2(_currentSpeed, myRigibody.velocity.y);
+            if (myRigibody.transform.localScale.x != 1)
+            {
+                myRigibody.transform.DOScaleX(1, playerSwipeduration);
+            }
+            animator.SetBool(boolRun, true);
+        }
+
+        else
+        {
+            animator.SetBool(boolRun, false);
         }
 
 
-        if(myRigibody.velocity.x > 0)
+        if (myRigibody.velocity.x > 0)
         {
             myRigibody.velocity -= friction;
         }
