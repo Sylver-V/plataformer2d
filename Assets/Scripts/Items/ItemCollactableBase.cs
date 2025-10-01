@@ -1,0 +1,32 @@
+using System.Collections;
+using System.Collections.Generic;
+using UnityEngine;
+
+public class ItemCollactableBase : MonoBehaviour
+{
+
+    public string comparteTag = "Player";
+
+    private void OnTriggerEnter2D(Collider2D collision)
+    {
+        if (collision.transform.CompareTag(comparteTag))
+        {
+            Collect();
+        }
+    }
+
+
+
+    protected virtual void Collect()
+    {
+        //Debug.Log("Collect");
+        OnCollect();
+        gameObject.SetActive(false);
+    }
+
+
+    protected virtual void OnCollect()
+    {
+
+    }
+}
