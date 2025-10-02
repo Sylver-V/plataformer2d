@@ -1,13 +1,15 @@
-using UnityEngine;
-using Ebac.Core.Singleton;
+using System.Collections;
+using System.Collections.Generic;
 using System;
+using UnityEngine;
+using TMPro;
+using Ebac.Core.Singleton;
+
 
 public class ItemManager : Singleton<ItemManager>
 {
     public int coins;
-
-    // Evento para notificar quando moedas mudam
-    public Action<int> OnCoinsChanged;
+    public TextMeshProUGUI uiTextCoins;
 
     private void Start()
     {
@@ -17,12 +19,17 @@ public class ItemManager : Singleton<ItemManager>
     private void Reset()
     {
         coins = 0;
-        OnCoinsChanged?.Invoke(coins); // Atualiza HUD no início
+        UpdateUI();
     }
 
     public void AddCoins(int amount = 1)
     {
         coins += amount;
-        OnCoinsChanged?.Invoke(coins); // Notifica HUD
+        UpdateUI();
+    }
+
+    private void UpdateUI()
+    {
+        uiTextCoins.text = coins.ToString();
     }
 }
