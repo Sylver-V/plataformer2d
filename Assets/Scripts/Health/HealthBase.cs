@@ -1,9 +1,12 @@
+using System;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
 public class HealthBase : MonoBehaviour
 {
+
+    public Action OnKill;
 
     public int startlife = 10;
 
@@ -57,6 +60,8 @@ public class HealthBase : MonoBehaviour
         {
             Destroy(gameObject, delayToKill);
         }
+        
+        if(OnKill != null) OnKill.Invoke();
     }
 
 }

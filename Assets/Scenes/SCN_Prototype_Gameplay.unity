@@ -466,6 +466,7 @@ MonoBehaviour:
   damage: 10
   animator: {fileID: 1615423194}
   triggerAttack: Attack
+  triggerKill: Death
   healthBase: {fileID: 55350811}
 --- !u!4 &55350809
 Transform:
@@ -515,7 +516,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ebc91c24e67364345a03801a3cd199a4, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  startlife: 10
+  startlife: 3
   destroyOnKill: 1
   delayToKill: 0
   _flashColor: {fileID: 0}
@@ -1594,6 +1595,7 @@ MonoBehaviour:
   damage: 10
   animator: {fileID: 0}
   triggerAttack: Attack
+  triggerKill: Kill
   healthBase: {fileID: 0}
 --- !u!50 &413171431
 Rigidbody2D:
