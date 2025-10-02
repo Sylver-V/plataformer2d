@@ -16,7 +16,7 @@ public class HealthBase : MonoBehaviour
     private int _currentlife;
     private bool _isDead = false;
 
-    [SerializeField] private FlashColor _flashColor;
+   private FlashColor _flashColor;
 
 
     private void Awake()
@@ -24,7 +24,7 @@ public class HealthBase : MonoBehaviour
         Init();
         if(_flashColor == null)
         {
-            _flashColor = GetComponent<FlashColor>(); 
+            _flashColor = GetComponentInChildren<FlashColor>(); 
         }
     }
 
