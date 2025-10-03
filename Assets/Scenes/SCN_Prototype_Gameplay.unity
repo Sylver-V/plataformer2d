@@ -2552,6 +2552,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1914560821}
     m_Modifications:
+    - target: {fileID: 296203119970315992, guid: 5a37efe5f88e70449aa116adcd4b597b, type: 3}
+      propertyPath: CollisionModule.m_Planes.Array.data[0]
+      value: 
+      objectReference: {fileID: 2122736348}
     - target: {fileID: 6873462164263123452, guid: 5a37efe5f88e70449aa116adcd4b597b, type: 3}
       propertyPath: m_LocalPosition.y
       value: 0
@@ -4893,7 +4897,7 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 6484540218837436197, guid: 693ca003bf9ff284e803478ad055e851, type: 3}
       propertyPath: m_RootOrder
-      value: 4
+      value: 3
       objectReference: {fileID: 0}
     - target: {fileID: 6484540218837436197, guid: 693ca003bf9ff284e803478ad055e851, type: 3}
       propertyPath: m_LocalPosition.x
@@ -7416,6 +7420,67 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!1001 &6890334171036079679
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 582024671101864037, guid: dca68686ffb0985488fe7422375574f3, type: 3}
+      propertyPath: CollisionModule.m_Planes.Array.data[0]
+      value: 
+      objectReference: {fileID: 2122736348}
+    - target: {fileID: 1245593319146838311, guid: dca68686ffb0985488fe7422375574f3, type: 3}
+      propertyPath: m_RootOrder
+      value: 8
+      objectReference: {fileID: 0}
+    - target: {fileID: 1245593319146838311, guid: dca68686ffb0985488fe7422375574f3, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: -15.24
+      objectReference: {fileID: 0}
+    - target: {fileID: 1245593319146838311, guid: dca68686ffb0985488fe7422375574f3, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 2.07
+      objectReference: {fileID: 0}
+    - target: {fileID: 1245593319146838311, guid: dca68686ffb0985488fe7422375574f3, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: -8.07
+      objectReference: {fileID: 0}
+    - target: {fileID: 1245593319146838311, guid: dca68686ffb0985488fe7422375574f3, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1245593319146838311, guid: dca68686ffb0985488fe7422375574f3, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1245593319146838311, guid: dca68686ffb0985488fe7422375574f3, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1245593319146838311, guid: dca68686ffb0985488fe7422375574f3, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1245593319146838311, guid: dca68686ffb0985488fe7422375574f3, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1245593319146838311, guid: dca68686ffb0985488fe7422375574f3, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1245593319146838311, guid: dca68686ffb0985488fe7422375574f3, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3180609331802769386, guid: dca68686ffb0985488fe7422375574f3, type: 3}
+      propertyPath: m_Name
+      value: PFB_ParticleSystem
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: dca68686ffb0985488fe7422375574f3, type: 3}
 --- !u!1001 &9163242618788317828
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -7423,6 +7488,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1914560821}
     m_Modifications:
+    - target: {fileID: 296203119970315992, guid: 5a37efe5f88e70449aa116adcd4b597b, type: 3}
+      propertyPath: CollisionModule.m_Planes.Array.data[0]
+      value: 
+      objectReference: {fileID: 2122736348}
     - target: {fileID: 9163242618495582144, guid: 5a37efe5f88e70449aa116adcd4b597b, type: 3}
       propertyPath: m_Name
       value: PFB_Coin
