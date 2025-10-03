@@ -851,7 +851,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   myRigibody: {fileID: 188897799}
   healthBase: {fileID: 188897804}
-  soPlayerSetup: {fileID: 11400000, guid: 87cb9363729e5c749b173d4d9cf73dcb, type: 2}
+  soPlayerSetup: {fileID: 11400000, guid: e67fcb728b17e6140bccb6022734e3be, type: 2}
 --- !u!114 &188897804
 MonoBehaviour:
   m_ObjectHideFlags: 0
