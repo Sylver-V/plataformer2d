@@ -18,14 +18,25 @@ public class HealthBase : MonoBehaviour
 
    private FlashColor _flashColor;
 
+    private DeathScreenManager deathScreenManager;
+
+
 
     private void Awake()
     {
         Init();
-        if(_flashColor == null)
+        if (_flashColor == null)
         {
-            _flashColor = GetComponentInChildren<FlashColor>(); 
+            _flashColor = GetComponentInChildren<FlashColor>();
         }
+
+        if (CompareTag("Player"))
+        {
+            deathScreenManager = FindObjectOfType<DeathScreenManager>();
+            OnKill += () => deathScreenManager?.ShowDeathScreen();
+        }
+
+
     }
 
 

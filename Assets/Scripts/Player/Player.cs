@@ -23,6 +23,10 @@ public class Player : MonoBehaviour
 
     //public Vector2 velocity;
 
+    [Header("Jump Sound")]
+    public AudioSource jumpAudioSource;
+
+
 
 
 
@@ -119,10 +123,10 @@ public class Player : MonoBehaviour
             myRigibody.velocity += soPlayerSetup.friction;
         }
     }
-     
+
     private void HandleJump()
     {
-        if (Input.GetKeyDown(KeyCode.Space) && IsGrounded()) 
+        if (Input.GetKeyDown(KeyCode.Space) && IsGrounded())
         {
             myRigibody.velocity = Vector2.up * soPlayerSetup.forceJump;
             myRigibody.transform.localScale = Vector2.one;
@@ -131,9 +135,13 @@ public class Player : MonoBehaviour
 
             HandleScaleJump();
             PlayJumpVFX();
+
+            if (jumpAudioSource != null)
+            {
+                jumpAudioSource.Play();
+            }
         }
     }
-
     private void PlayJumpVFX()
     {
         VFXManager.Instance.PlayVFXByType(VFXManager.VFXType.JUMP, transform.position);

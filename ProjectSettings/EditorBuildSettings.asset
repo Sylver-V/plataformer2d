@@ -9,6 +9,9 @@ EditorBuildSettings:
     path: Assets/Scenes/SCN_Menu.unity
     guid: 53340abb4b6de884b8d30ced4adbbceb
   - enabled: 1
+    path: Assets/Scenes/SCN_Prototype_Gameplay.unity
+    guid: 1b0b3f5a7e0c6f542840fb0ffb965e19
+  - enabled: 0
     path: Assets/Scenes/SCN_Level01.unity
     guid: 051ba9db3113b9a4f9a8bec2a57c81e3
   m_configObjects: {}
